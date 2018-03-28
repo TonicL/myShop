@@ -1,0 +1,118 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:81:"/Users/apple/Sites/workspace/tpshop/public/../application/admin/view/login/1.html";i:1521450683;}*/ ?>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>login</title>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/css/demo.css" />
+<!--必要样式-->
+<link rel="stylesheet" type="text/css" href="/static/admin/css/component.css" />
+<!--[if IE]>
+<script src="/static/admin/js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="container demo-1">
+		<div class="content">
+			<div id="large-header" class="large-header">
+				<canvas id="demo-canvas"></canvas>
+				<div class="logo_box">
+					<h3>欢迎登录</h3>
+					<form action="#" name="f" method="post">
+						<div class="input_outer">
+							<span class="u_user"></span>
+							<input name="username" class="text" id="logname" style="color: #FFFFFF !important" type="text" placeholder="请输入账户">
+						</div>
+						<!--<div class="input_outer">-->
+							<!--<span class="u_user"></span>-->
+							<!--<input name="email" class="text" id="email" style="color: #FFFFFF !important" type="text" placeholder="请输入邮箱">-->
+						<!--</div>-->
+						<div class="input_outer">
+							<span class="us_uer"></span>
+							<input name="password" class="text" id="pwd" style="color: #FFFFFF !important; position:absolute; z-index:100;"value="" type="password" placeholder="请输入密码">
+						</div>
+						<div class="mb2"><a class="act-but submit" id="sub-btn" href="javascript:;" style="color: #FFFFFF">登录</a></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div><!-- /container -->
+	<script src="/static/admin/js/TweenLite.min.js"></script>
+	<script src="/static/admin/js/EasePack.min.js"></script>
+	<script src="/static/admin/js/rAF.js"></script>
+	<script src="/static/admin/js/demo-1.js"></script>
+	<script type="text/javascript" src="/static/admin/js/jquery-1.12.1.js"></script>
+	<script type="text/javascript" src="/static/admin/js/layer/layer.js"></script>
+	<div style="text-align:center;"></div>
+	<script type="text/javascript">
+	$('#sub-btn').on('click',function(){
+		if($('#logname').val() == ''){
+			layer.msg('用户名不能为空',{icon:5});
+			$('#logname').focus();
+			return;
+		}
+
+		if($('#logname').val().length<4 || $('#logname').val().length>16){
+			layer.msg('用户名长度为4-16位',{icon:5});
+			$('#logname').focus();
+			return;
+		}
+
+//		var email = $('#email').val();
+//		var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+//		if(email == ''){
+//			layer.msg('邮箱地址不能为空',{icon:5});
+//			$('#email').focus();
+//			return;
+//		}
+//
+//		if(!email.match(reg)){
+//			layer.msg('请输入正确的邮箱格式!',{icon:5});
+//			$('#email').focus();
+//			return;
+//		}
+		
+		if($('#pwd').val() == ''){
+			layer.msg('密码不能为空',{icon:5});
+			$('#pwd').focus();
+			return;
+		}
+		if($('#pwd').val().length<4 || $('#pwd').val().length>16){
+			layer.msg('密码长度为4-16位',{icon:5});
+			$('#pwd').focus();
+			return;
+		}
+		
+		var aaa;
+		$.ajax({
+			"type":"post",
+            "url":'<?php echo url("admin/login/ajaxlogin"); ?>',
+            "data":{
+				'username':$('#logname').val(),
+				//'email':email,
+				'password':$('#pwd').val()
+			},
+            "dataType":"json",
+            "success":function(responce){
+                if(responce.code == 10000){
+                	layer.msg('登录成功！', {
+                        icon: 16,
+                        shade: 0.01
+                    });
+					//location.href="<?php echo url('admin/index/index'); ?>";
+                    setTimeout("location.href='<?php echo url('admin/index/index'); ?>'",1000);
+					//location.href="<?php echo url('admin/index/index'); ?>";
+                }else{
+                    layer.msg(responce.msg);
+                }
+            }
+		});
+	});
+
+
+	</script>
+</body>
+</html>

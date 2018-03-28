@@ -1,0 +1,2542 @@
+---------------------------------------------------------------
+[ 2018-03-27T09:07:21+08:00 ] 127.0.0.1 GET /
+[ info ] www.tpshop.com/ [运行时间：0.165465s][吞吐率：6.04req/s] [内存消耗：3,321.78kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=7664264192',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/index/index.html [ array (
+  0 => 'category',
+  1 => 'cate_info',
+  2 => 'goods',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005723s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.023318s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_category` WHERE  `is_show` = 1 [ RunTime:0.003811s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.003110s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `cate_id` = 1 LIMIT 12 [ RunTime:0.000747s ]
+---------------------------------------------------------------
+[ 2018-03-27T09:07:31+08:00 ] 127.0.0.1 GET /home/goods/detail/id/16.html
+[ info ] www.tpshop.com/home/goods/detail/id/16.html [运行时间：0.112861s][吞吐率：8.86req/s] [内存消耗：3,344.16kb] [文件加载：62]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/goods/detail/id/16_html' => '',
+  'id' => '16',
+)
+[ info ] [ RUN ] app\home\controller\Goods->detail[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/goods/detail.html [ array (
+  0 => 'goods',
+  1 => 'goodspics',
+  2 => 'attribute',
+  3 => 'goodsattr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000988s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001972s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.001897s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goodspics` [ RunTime:0.001675s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goodspics` WHERE  `goods_id` = 16 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.002809s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_attribute` WHERE  `type_id` = 8 [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.001739s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods_attr` WHERE  `goods_id` = 16 [ RunTime:0.000801s ]
+---------------------------------------------------------------
+[ 2018-03-27T09:07:38+08:00 ] 127.0.0.1 POST /home/cart/addcart.html
+[ info ] www.tpshop.com/home/cart/addcart.html [运行时间：0.060412s][吞吐率：16.55req/s] [内存消耗：3,300.63kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'addcart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/goods/detail/id/16.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/addcart_html' => '',
+  'goods_id' => '16',
+  'goods_attr_ids' => '2,4',
+  'number' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Cart->addcart[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/addcart.html [ array (
+  0 => 'goods',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000729s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001152s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000842s ]
+---------------------------------------------------------------
+[ 2018-03-27T09:07:39+08:00 ] 127.0.0.1 GET /home/cart/index.html
+[ info ] www.tpshop.com/home/cart/index.html [运行时间：0.078725s][吞吐率：12.70req/s] [内存消耗：3,335.14kb] [文件加载：62]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/addcart.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0; cart=a%3A1%3A%7Bs%3A6%3A%2216-2%2C4%22%3Bs%3A1%3A%221%22%3B%7D',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/index_html' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->index[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/cart.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000939s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001337s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.001209s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('2','4') [ RunTime:0.008045s ]
+---------------------------------------------------------------
+[ 2018-03-27T09:07:41+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids= [运行时间：0.027988s][吞吐率：35.73req/s] [内存消耗：2,003.64kb] [文件加载：49]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0; cart=a%3A1%3A%7Bs%3A6%3A%2216-2%2C4%22%3Bs%3A1%3A%221%22%3B%7D',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-27T09:07:42+08:00 ] 127.0.0.1 GET /home/login/login.html
+[ info ] www.tpshop.com/home/login/login.html [运行时间：0.025267s][吞吐率：39.58req/s] [内存消耗：2,058.47kb] [文件加载：52]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0; cart=a%3A1%3A%7Bs%3A6%3A%2216-2%2C4%22%3Bs%3A1%3A%221%22%3B%7D',
+)
+[ info ] [ PARAM ] array (
+  '/home/login/login_html' => '',
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Login.php ]
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-27T09:07:49+08:00 ] 127.0.0.1 POST /home/login/dologin.html
+[ info ] www.tpshop.com/home/login/dologin.html [运行时间：0.107921s][吞吐率：9.27req/s] [内存消耗：3,251.02kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '43',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0; cart=a%3A1%3A%7Bs%3A6%3A%2216-2%2C4%22%3Bs%3A1%3A%221%22%3B%7D',
+)
+[ info ] [ PARAM ] array (
+  '/home/login/dologin_html' => '',
+  'username' => 'l5472869@163.com',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\home\controller\Login->dologin[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_user` [ RunTime:0.004133s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_user` WHERE  (  `email` = 'l5472869@163.com' OR `phone` = 'l5472869@163.com' )  AND `password` = '7aeeec25fba623889bf80ca55ea79744' LIMIT 1 [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001525s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `user_id` = 6  AND `goods_id` = 16  AND `goods_attr_ids` = '2,4' LIMIT 1 [ RunTime:0.000782s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_cart` (`user_id` , `goods_id` , `goods_attr_ids` , `number` , `create_time` , `update_time`) VALUES (6 , 16 , '2,4' , 1 , 1522112869 , 1522112869) [ RunTime:0.007375s ]
+---------------------------------------------------------------
+[ 2018-03-27T09:07:52+08:00 ] 127.0.0.1 GET /home/cart/index.html
+[ info ] www.tpshop.com/home/cart/index.html [运行时间：0.064476s][吞吐率：15.51req/s] [内存消耗：3,349.11kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/login/dologin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/index_html' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->index[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/cart.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000855s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001556s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `user_id` = 6 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001579s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.001167s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','13') [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','11') [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('7') [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('2','4') [ RunTime:0.000611s ]
+---------------------------------------------------------------
+[ 2018-03-27T09:07:59+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=5
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=5 [运行时间：0.069580s][吞吐率：14.37req/s] [内存消耗：3,339.30kb] [文件加载：62]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '5',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001483s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.002015s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.000980s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (5) [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('2','4') [ RunTime:0.000664s ]
+---------------------------------------------------------------
+[ 2018-03-27T09:08:02+08:00 ] 127.0.0.1 POST /home/cart/createorder.html
+[ info ] www.tpshop.com/home/cart/createorder.html [运行时间：0.110517s][吞吐率：9.05req/s] [内存消耗：3,271.91kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'createorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/flow2.html?cart_ids=5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/createorder_html' => '',
+  'address_id' => '1',
+  'shipping_type' => '0',
+  'pay_type' => '2',
+  'cart_ids' => '5',
+)
+[ info ] [ RUN ] app\home\controller\Cart->createorder[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001155s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001604s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`goods_name`,`t2`.`goods_logo`,`t2`.`goods_price` FROM `tpshop_cart` `t1` LEFT JOIN `tpshop_goods` `t2` ON t1.goods_id WHERE  `t1`.`id` IN ('5') [ RunTime:0.001279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order` [ RunTime:0.001536s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order` (`order_sn` , `user_id` , `order_amount` , `consignee_name` , `consignee_phone` , `consignee_address` , `shipping_type` , `pay_type` , `create_time` , `update_time`) VALUES ('1522112882848671' , 6 , 37008 , '曹操' , '15312345678' , '北京市顺义区黑马大厦' , 0 , 2 , 1522112882 , 1522112882) [ RunTime:0.001253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order_goods` [ RunTime:0.003803s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '妙蛙种子' , '/uploads/20180314/4f000d1f85878077a8c52ff904b45d79.png' , 1 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000813s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '妙蛙花' , '/uploads/20180314/e9c0d1dc79bbebe8f7318b01dbd8b87c.png' , 36 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000331s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '小火龙' , '/uploads/20180314/fa9e2333d121824a08889e079851b315.png' , 1 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000296s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '杰尼龟' , '/uploads/20180315/22459b3cdc665ab5987bb28b40d4746c.png' , 1 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000333s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '水箭龟' , '/uploads/20180315/1f300832d281fc3ba2a589eb64590c89.png' , 36 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000415s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '绿毛虫' , '/uploads/20180315/f32316d075417637561d6b5948c0510d.png' , 1 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000355s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '绿毛虫' , '/uploads/20180315/7d506715fb8f6654eb19498dbf9dc02e.png' , 1 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000559s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '喵喵' , '/uploads/20180315/4a61f69e11b4743dd46ed4db187017be.png' , 1 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000317s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '可达鸭' , '/uploads/20180315/33d09482e76f3fe138ff87304b75642f.png' , 36 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000310s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '撒地方' , '/uploads/20180315/82952c90a988067aae0fefa718673dce.png' , 36 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000309s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '小火龙wq' , '/uploads/20180315/3dce1d8b5d27d466f0dda94a4775dec6.png' , 2132 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000286s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '小火龙21' , '/uploads/20180315/8bd72149dbe5bc8bb27cd49e853361b4.png' , 34432 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000319s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '皮卡丘' , '/uploads/20180315/bae371fe87b8a8060f4dda673c3cb012.png' , 100 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000271s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '大凶残' , '/uploads/20180318/201be717fc914f92d5d30fff4956671a.png' , 11 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000315s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '12' , '/uploads/20180320/0dc91efde321676250cc6f002edc0a25.png' , 12 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000305s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '三体' , '/uploads/20180320/1619d475828b01db8bd5b2f2c2201f79.png' , 36 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000304s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '最帅的我' , '/uploads/20180320/91de818a2356c17c32d9d0142c704213.png' , 36 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000322s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (2 , 16 , '大凶残' , '/uploads/20180326/f09bcd635de8e933c061b36ec05f3b63.png' , 99 , 1 , '2,4' , 1522112882 , 1522112882) [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` = 5 [ RunTime:0.000665s ]
+[ sql ] [ SQL ] DELETE FROM `tpshop_cart`    WHERE  `id` = 5 [ RunTime:0.003614s ]
+---------------------------------------------------------------
+[ 2018-03-27T09:08:05+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=5
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=5 [运行时间：0.042855s][吞吐率：23.33req/s] [内存消耗：3,295.72kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '5',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000927s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.002014s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (5) [ RunTime:0.002751s ]
+---------------------------------------------------------------
+[ 2018-03-27T09:09:43+08:00 ] 127.0.0.1 GET /index.php/plugins/alipay/
+[ info ] www.tpshop.com/index.php/plugins/alipay/ [运行时间：0.030152s][吞吐率：33.17req/s] [内存消耗：1,685.88kb] [文件加载：43]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'plugins',
+    1 => 'alipay',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-27T09:26:50+08:00 ] 127.0.0.1 GET /index.php/plugins/alipay/
+[ info ] www.tpshop.com/index.php/plugins/alipay/ [运行时间：0.046700s][吞吐率：21.41req/s] [内存消耗：1,686.69kb] [文件加载：43]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'plugins',
+    1 => 'alipay',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-27T19:30:46+08:00 ] 127.0.0.1 GET /
+[ info ] www.tpshop.com/ [运行时间：0.282584s][吞吐率：3.54req/s] [内存消耗：3,324.52kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/index/index.html [ array (
+  0 => 'category',
+  1 => 'cate_info',
+  2 => 'goods',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032492s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_category` [ RunTime:0.071524s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_category` WHERE  `is_show` = 1 [ RunTime:0.006788s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.002371s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `cate_id` = 1 LIMIT 12 [ RunTime:0.001332s ]
+---------------------------------------------------------------
+[ 2018-03-27T19:31:03+08:00 ] 127.0.0.1 GET /home/goods/detail/id/16.html
+[ info ] www.tpshop.com/home/goods/detail/id/16.html [运行时间：0.142327s][吞吐率：7.03req/s] [内存消耗：3,347.11kb] [文件加载：62]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/goods/detail/id/16_html' => '',
+  'id' => '16',
+)
+[ info ] [ RUN ] app\home\controller\Goods->detail[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/goods/detail.html [ array (
+  0 => 'goods',
+  1 => 'goodspics',
+  2 => 'attribute',
+  3 => 'goodsattr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000889s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.003990s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.001920s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goodspics` [ RunTime:0.002489s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goodspics` WHERE  `goods_id` = 16 [ RunTime:0.001139s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_attribute` [ RunTime:0.001352s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_attribute` WHERE  `type_id` = 8 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.003665s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods_attr` WHERE  `goods_id` = 16 [ RunTime:0.000693s ]
+---------------------------------------------------------------
+[ 2018-03-27T19:31:20+08:00 ] 127.0.0.1 POST /home/cart/addcart.html
+[ info ] www.tpshop.com/home/cart/addcart.html [运行时间：0.090313s][吞吐率：11.07req/s] [内存消耗：3,276.09kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'addcart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/goods/detail/id/16.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/addcart_html' => '',
+  'goods_id' => '16',
+  'goods_attr_ids' => '2,3',
+  'number' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Cart->addcart[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/addcart.html [ array (
+  0 => 'goods',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000839s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001265s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `user_id` = 6  AND `goods_id` = 16  AND `goods_attr_ids` = '2,3' LIMIT 1 [ RunTime:0.002255s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_cart` (`user_id` , `goods_id` , `goods_attr_ids` , `number` , `create_time` , `update_time`) VALUES (6 , 16 , '2,3' , 1 , 1522150280 , 1522150280) [ RunTime:0.013871s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001129s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000661s ]
+---------------------------------------------------------------
+[ 2018-03-27T19:31:21+08:00 ] 127.0.0.1 GET /home/cart/index.html
+[ info ] www.tpshop.com/home/cart/index.html [运行时间：0.075102s][吞吐率：13.32req/s] [内存消耗：3,349.11kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/addcart.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/index_html' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->index[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/cart.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000704s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001192s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `user_id` = 6 [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001331s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.001105s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','13') [ RunTime:0.006371s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','11') [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('7') [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('2','3') [ RunTime:0.000973s ]
+---------------------------------------------------------------
+[ 2018-03-27T19:31:24+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=6
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=6 [运行时间：0.074444s][吞吐率：13.43req/s] [内存消耗：3,339.30kb] [文件加载：62]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '6',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001216s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.003965s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.002209s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (6) [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001422s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('2','3') [ RunTime:0.000685s ]
+---------------------------------------------------------------
+[ 2018-03-27T19:31:30+08:00 ] 127.0.0.1 POST /home/cart/createorder.html
+[ info ] www.tpshop.com/home/cart/createorder.html [运行时间：0.139732s][吞吐率：7.16req/s] [内存消耗：3,271.91kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'createorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/flow2.html?cart_ids=6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/createorder_html' => '',
+  'address_id' => '1',
+  'shipping_type' => '0',
+  'pay_type' => '2',
+  'cart_ids' => '6',
+)
+[ info ] [ RUN ] app\home\controller\Cart->createorder[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001407s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001641s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`goods_name`,`t2`.`goods_logo`,`t2`.`goods_price` FROM `tpshop_cart` `t1` LEFT JOIN `tpshop_goods` `t2` ON t1.goods_id WHERE  `t1`.`id` IN ('6') [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order` [ RunTime:0.001198s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order` (`order_sn` , `user_id` , `order_amount` , `consignee_name` , `consignee_phone` , `consignee_address` , `shipping_type` , `pay_type` , `create_time` , `update_time`) VALUES ('1522150290530810' , 6 , 37008 , '曹操' , '15312345678' , '北京市顺义区黑马大厦' , 0 , 2 , 1522150290 , 1522150290) [ RunTime:0.001905s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order_goods` [ RunTime:0.003009s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '妙蛙种子' , '/uploads/20180314/4f000d1f85878077a8c52ff904b45d79.png' , 1 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000678s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '妙蛙花' , '/uploads/20180314/e9c0d1dc79bbebe8f7318b01dbd8b87c.png' , 36 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000291s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '小火龙' , '/uploads/20180314/fa9e2333d121824a08889e079851b315.png' , 1 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000298s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '杰尼龟' , '/uploads/20180315/22459b3cdc665ab5987bb28b40d4746c.png' , 1 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000329s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '水箭龟' , '/uploads/20180315/1f300832d281fc3ba2a589eb64590c89.png' , 36 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000301s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '绿毛虫' , '/uploads/20180315/f32316d075417637561d6b5948c0510d.png' , 1 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000330s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '绿毛虫' , '/uploads/20180315/7d506715fb8f6654eb19498dbf9dc02e.png' , 1 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000293s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '喵喵' , '/uploads/20180315/4a61f69e11b4743dd46ed4db187017be.png' , 1 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000297s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '可达鸭' , '/uploads/20180315/33d09482e76f3fe138ff87304b75642f.png' , 36 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000299s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '撒地方' , '/uploads/20180315/82952c90a988067aae0fefa718673dce.png' , 36 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000340s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '小火龙wq' , '/uploads/20180315/3dce1d8b5d27d466f0dda94a4775dec6.png' , 2132 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000286s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '小火龙21' , '/uploads/20180315/8bd72149dbe5bc8bb27cd49e853361b4.png' , 34432 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000336s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '皮卡丘' , '/uploads/20180315/bae371fe87b8a8060f4dda673c3cb012.png' , 100 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000302s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '大凶残' , '/uploads/20180318/201be717fc914f92d5d30fff4956671a.png' , 11 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000302s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '12' , '/uploads/20180320/0dc91efde321676250cc6f002edc0a25.png' , 12 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000310s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '三体' , '/uploads/20180320/1619d475828b01db8bd5b2f2c2201f79.png' , 36 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000326s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '最帅的我' , '/uploads/20180320/91de818a2356c17c32d9d0142c704213.png' , 36 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000300s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (3 , 16 , '大凶残' , '/uploads/20180326/f09bcd635de8e933c061b36ec05f3b63.png' , 99 , 1 , '2,3' , 1522150290 , 1522150290) [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` = 6 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] DELETE FROM `tpshop_cart`    WHERE  `id` = 6 [ RunTime:0.002798s ]
+---------------------------------------------------------------
+[ 2018-03-27T19:47:34+08:00 ] 127.0.0.1 POST /home/cart/createorder.html
+[ info ] www.tpshop.com/home/cart/createorder.html [运行时间：0.137033s][吞吐率：7.30req/s] [内存消耗：3,228.18kb] [文件加载：59]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'createorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'origin' => 'http://www.tpshop.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/flow2.html?cart_ids=6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/createorder_html' => '',
+  'address_id' => '1',
+  'shipping_type' => '0',
+  'pay_type' => '2',
+  'cart_ids' => '6',
+)
+[ info ] [ RUN ] app\home\controller\Cart->createorder[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002342s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.002736s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`goods_name`,`t2`.`goods_logo`,`t2`.`goods_price` FROM `tpshop_cart` `t1` LEFT JOIN `tpshop_goods` `t2` ON t1.goods_id WHERE  `t1`.`id` IN ('6') [ RunTime:0.002508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.002657s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order` [ RunTime:0.001460s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order` (`order_sn` , `user_id` , `order_amount` , `consignee_name` , `consignee_phone` , `consignee_address` , `shipping_type` , `pay_type` , `create_time` , `update_time`) VALUES ('1522151254301273' , 6 , 0 , '曹操' , '15312345678' , '北京市顺义区黑马大厦' , 0 , 2 , 1522151254 , 1522151254) [ RunTime:0.002589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order_goods` [ RunTime:0.002262s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` = 6 [ RunTime:0.000953s ]
+---------------------------------------------------------------
+[ 2018-03-27T19:47:40+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=6
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=6 [运行时间：0.049829s][吞吐率：20.07req/s] [内存消耗：3,298.71kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '6',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000774s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001270s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001141s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (6) [ RunTime:0.000980s ]
+---------------------------------------------------------------
+[ 2018-03-27T19:47:42+08:00 ] 127.0.0.1 POST /home/cart/createorder.html
+[ info ] www.tpshop.com/home/cart/createorder.html [运行时间：0.053851s][吞吐率：18.57req/s] [内存消耗：3,228.18kb] [文件加载：59]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'createorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/flow2.html?cart_ids=6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/createorder_html' => '',
+  'address_id' => '1',
+  'shipping_type' => '0',
+  'pay_type' => '2',
+  'cart_ids' => '6',
+)
+[ info ] [ RUN ] app\home\controller\Cart->createorder[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000915s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`goods_name`,`t2`.`goods_logo`,`t2`.`goods_price` FROM `tpshop_cart` `t1` LEFT JOIN `tpshop_goods` `t2` ON t1.goods_id WHERE  `t1`.`id` IN ('6') [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order` [ RunTime:0.001004s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order` (`order_sn` , `user_id` , `order_amount` , `consignee_name` , `consignee_phone` , `consignee_address` , `shipping_type` , `pay_type` , `create_time` , `update_time`) VALUES ('1522151262493791' , 6 , 0 , '曹操' , '15312345678' , '北京市顺义区黑马大厦' , 0 , 2 , 1522151262 , 1522151262) [ RunTime:0.002326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order_goods` [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` = 6 [ RunTime:0.000602s ]
+---------------------------------------------------------------
+[ 2018-03-27T19:55:22+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=6
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=6 [运行时间：0.116742s][吞吐率：8.57req/s] [内存消耗：3,298.16kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '6',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003847s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.005068s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.003137s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (6) [ RunTime:0.001265s ]
+---------------------------------------------------------------
+[ 2018-03-27T19:55:23+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=6
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=6 [运行时间：0.047519s][吞吐率：21.04req/s] [内存消耗：3,298.68kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '6',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000761s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001600s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001091s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (6) [ RunTime:0.000689s ]
+---------------------------------------------------------------
+[ 2018-03-27T19:55:24+08:00 ] 127.0.0.1 POST /home/cart/createorder.html
+[ info ] www.tpshop.com/home/cart/createorder.html [运行时间：0.058014s][吞吐率：17.24req/s] [内存消耗：3,228.18kb] [文件加载：59]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'createorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/flow2.html?cart_ids=6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/createorder_html' => '',
+  'address_id' => '1',
+  'shipping_type' => '0',
+  'pay_type' => '2',
+  'cart_ids' => '6',
+)
+[ info ] [ RUN ] app\home\controller\Cart->createorder[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001120s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001226s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`goods_name`,`t2`.`goods_logo`,`t2`.`goods_price` FROM `tpshop_cart` `t1` LEFT JOIN `tpshop_goods` `t2` ON t1.goods_id WHERE  `t1`.`id` IN ('6') [ RunTime:0.001098s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001040s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order` (`order_sn` , `user_id` , `order_amount` , `consignee_name` , `consignee_phone` , `consignee_address` , `shipping_type` , `pay_type` , `create_time` , `update_time`) VALUES ('1522151724555792' , 6 , 0 , '曹操' , '15312345678' , '北京市顺义区黑马大厦' , 0 , 2 , 1522151724 , 1522151724) [ RunTime:0.002308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order_goods` [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` = 6 [ RunTime:0.000596s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:05:51+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=6
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=6 [运行时间：0.103055s][吞吐率：9.70req/s] [内存消耗：3,298.16kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '6',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001075s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.002319s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (6) [ RunTime:0.000666s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:06:00+08:00 ] 127.0.0.1 POST /home/cart/createorder.html
+[ info ] www.tpshop.com/home/cart/createorder.html [运行时间：0.058093s][吞吐率：17.21req/s] [内存消耗：3,228.18kb] [文件加载：59]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'createorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/flow2.html?cart_ids=6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/createorder_html' => '',
+  'address_id' => '1',
+  'shipping_type' => '0',
+  'pay_type' => '2',
+  'cart_ids' => '6',
+)
+[ info ] [ RUN ] app\home\controller\Cart->createorder[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001159s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001649s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`goods_name`,`t2`.`goods_logo`,`t2`.`goods_price` FROM `tpshop_cart` `t1` LEFT JOIN `tpshop_goods` `t2` ON t1.goods_id WHERE  `t1`.`id` IN ('6') [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order` [ RunTime:0.001295s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order` (`order_sn` , `user_id` , `order_amount` , `consignee_name` , `consignee_phone` , `consignee_address` , `shipping_type` , `pay_type` , `create_time` , `update_time`) VALUES ('1522152359343356' , 6 , 0 , '曹操' , '15312345678' , '北京市顺义区黑马大厦' , 0 , 2 , 1522152359 , 1522152359) [ RunTime:0.001727s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order_goods` [ RunTime:0.001110s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` = 6 [ RunTime:0.000591s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:06:07+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=6
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=6 [运行时间：0.055454s][吞吐率：18.03req/s] [内存消耗：3,298.16kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '6',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001144s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001264s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001064s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (6) [ RunTime:0.000661s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:07:00+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=6
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=6 [运行时间：0.097852s][吞吐率：10.22req/s] [内存消耗：3,298.16kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '6',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000965s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001247s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001125s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (6) [ RunTime:0.000624s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:07:02+08:00 ] 127.0.0.1 GET /home/cart/index.html
+[ info ] www.tpshop.com/home/cart/index.html [运行时间：0.061876s][吞吐率：16.16req/s] [内存消耗：3,338.17kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/addcart.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/index_html' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->index[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/cart.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000749s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001223s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `user_id` = 6 [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.001115s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','13') [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','11') [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('7') [ RunTime:0.000627s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:07:03+08:00 ] 127.0.0.1 GET /home/cart/index.html
+[ info ] www.tpshop.com/home/cart/index.html [运行时间：0.056417s][吞吐率：17.73req/s] [内存消耗：3,338.25kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/addcart.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/index_html' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->index[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/cart.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001022s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001363s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `user_id` = 6 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001138s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','13') [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','11') [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('7') [ RunTime:0.000594s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:07:07+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=3
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=3 [运行时间：0.059847s][吞吐率：16.71req/s] [内存消耗：3,341.91kb] [文件加载：62]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '3',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000868s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001365s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.004303s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (3) [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.001342s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','11') [ RunTime:0.001081s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:07:10+08:00 ] 127.0.0.1 POST /home/cart/createorder.html
+[ info ] www.tpshop.com/home/cart/createorder.html [运行时间：0.113318s][吞吐率：8.82req/s] [内存消耗：3,274.90kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'createorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/flow2.html?cart_ids=3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/createorder_html' => '',
+  'address_id' => '1',
+  'shipping_type' => '0',
+  'pay_type' => '2',
+  'cart_ids' => '3',
+)
+[ info ] [ RUN ] app\home\controller\Cart->createorder[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000723s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001393s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`goods_name`,`t2`.`goods_logo`,`t2`.`goods_price` FROM `tpshop_cart` `t1` LEFT JOIN `tpshop_goods` `t2` ON t1.goods_id WHERE  `t1`.`id` IN ('3') [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order` [ RunTime:0.001309s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order` (`order_sn` , `user_id` , `order_amount` , `consignee_name` , `consignee_phone` , `consignee_address` , `shipping_type` , `pay_type` , `create_time` , `update_time`) VALUES ('1522152430886783' , 6 , 37008 , '曹操' , '15312345678' , '北京市顺义区黑马大厦' , 0 , 2 , 1522152430 , 1522152430) [ RunTime:0.001962s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order_goods` [ RunTime:0.001783s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '妙蛙种子' , '/uploads/20180314/4f000d1f85878077a8c52ff904b45d79.png' , 1 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000910s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '妙蛙花' , '/uploads/20180314/e9c0d1dc79bbebe8f7318b01dbd8b87c.png' , 36 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000412s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '小火龙' , '/uploads/20180314/fa9e2333d121824a08889e079851b315.png' , 1 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000425s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '杰尼龟' , '/uploads/20180315/22459b3cdc665ab5987bb28b40d4746c.png' , 1 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000288s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '水箭龟' , '/uploads/20180315/1f300832d281fc3ba2a589eb64590c89.png' , 36 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000401s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '绿毛虫' , '/uploads/20180315/f32316d075417637561d6b5948c0510d.png' , 1 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000313s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '绿毛虫' , '/uploads/20180315/7d506715fb8f6654eb19498dbf9dc02e.png' , 1 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000288s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '喵喵' , '/uploads/20180315/4a61f69e11b4743dd46ed4db187017be.png' , 1 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000329s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '可达鸭' , '/uploads/20180315/33d09482e76f3fe138ff87304b75642f.png' , 36 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000307s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '撒地方' , '/uploads/20180315/82952c90a988067aae0fefa718673dce.png' , 36 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000297s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '小火龙wq' , '/uploads/20180315/3dce1d8b5d27d466f0dda94a4775dec6.png' , 2132 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000300s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '小火龙21' , '/uploads/20180315/8bd72149dbe5bc8bb27cd49e853361b4.png' , 34432 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000300s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '皮卡丘' , '/uploads/20180315/bae371fe87b8a8060f4dda673c3cb012.png' , 100 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000304s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '大凶残' , '/uploads/20180318/201be717fc914f92d5d30fff4956671a.png' , 11 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000306s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '12' , '/uploads/20180320/0dc91efde321676250cc6f002edc0a25.png' , 12 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000313s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '三体' , '/uploads/20180320/1619d475828b01db8bd5b2f2c2201f79.png' , 36 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000302s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '最帅的我' , '/uploads/20180320/91de818a2356c17c32d9d0142c704213.png' , 36 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000271s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (8 , 18 , '大凶残' , '/uploads/20180326/f09bcd635de8e933c061b36ec05f3b63.png' , 99 , 1 , '9,11' , 1522152430 , 1522152430) [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` = 3 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] DELETE FROM `tpshop_cart`    WHERE  `id` = 3 [ RunTime:0.001690s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:09:01+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=3
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=3 [运行时间：0.053800s][吞吐率：18.59req/s] [内存消耗：3,298.71kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '3',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000875s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (3) [ RunTime:0.000655s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:09:02+08:00 ] 127.0.0.1 GET /home/cart/index.html
+[ info ] www.tpshop.com/home/cart/index.html [运行时间：0.051769s][吞吐率：19.32req/s] [内存消耗：3,327.79kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/addcart.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/index_html' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->index[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/cart.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000728s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001272s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `user_id` = 6 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001017s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','13') [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('7') [ RunTime:0.000589s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:09:11+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=4
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=4 [运行时间：0.056097s][吞吐率：17.83req/s] [内存消耗：3,340.89kb] [文件加载：62]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '4',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000908s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001036s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001031s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (4) [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('7') [ RunTime:0.000582s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:09:13+08:00 ] 127.0.0.1 POST /home/cart/createorder.html
+[ info ] www.tpshop.com/home/cart/createorder.html [运行时间：0.114216s][吞吐率：8.76req/s] [内存消耗：3,274.90kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'createorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/flow2.html?cart_ids=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/createorder_html' => '',
+  'address_id' => '1',
+  'shipping_type' => '0',
+  'pay_type' => '2',
+  'cart_ids' => '4',
+)
+[ info ] [ RUN ] app\home\controller\Cart->createorder[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000739s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.004030s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`goods_name`,`t2`.`goods_logo`,`t2`.`goods_price` FROM `tpshop_cart` `t1` LEFT JOIN `tpshop_goods` `t2` ON t1.goods_id WHERE  `t1`.`id` IN ('4') [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001090s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order` [ RunTime:0.002012s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order` (`order_sn` , `user_id` , `order_amount` , `consignee_name` , `consignee_phone` , `consignee_address` , `shipping_type` , `pay_type` , `create_time` , `update_time`) VALUES ('1522152553399808' , 6 , 37008 , '曹操' , '15312345678' , '北京市顺义区黑马大厦' , 0 , 2 , 1522152553 , 1522152553) [ RunTime:0.001492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order_goods` [ RunTime:0.001880s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '妙蛙种子' , '/uploads/20180314/4f000d1f85878077a8c52ff904b45d79.png' , 1 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000762s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '妙蛙花' , '/uploads/20180314/e9c0d1dc79bbebe8f7318b01dbd8b87c.png' , 36 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000278s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '小火龙' , '/uploads/20180314/fa9e2333d121824a08889e079851b315.png' , 1 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000351s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '杰尼龟' , '/uploads/20180315/22459b3cdc665ab5987bb28b40d4746c.png' , 1 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000293s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '水箭龟' , '/uploads/20180315/1f300832d281fc3ba2a589eb64590c89.png' , 36 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000292s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '绿毛虫' , '/uploads/20180315/f32316d075417637561d6b5948c0510d.png' , 1 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000288s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '绿毛虫' , '/uploads/20180315/7d506715fb8f6654eb19498dbf9dc02e.png' , 1 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000303s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '喵喵' , '/uploads/20180315/4a61f69e11b4743dd46ed4db187017be.png' , 1 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000298s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '可达鸭' , '/uploads/20180315/33d09482e76f3fe138ff87304b75642f.png' , 36 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000303s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '撒地方' , '/uploads/20180315/82952c90a988067aae0fefa718673dce.png' , 36 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000306s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '小火龙wq' , '/uploads/20180315/3dce1d8b5d27d466f0dda94a4775dec6.png' , 2132 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000291s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '小火龙21' , '/uploads/20180315/8bd72149dbe5bc8bb27cd49e853361b4.png' , 34432 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000285s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '皮卡丘' , '/uploads/20180315/bae371fe87b8a8060f4dda673c3cb012.png' , 100 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000308s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '大凶残' , '/uploads/20180318/201be717fc914f92d5d30fff4956671a.png' , 11 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000300s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '12' , '/uploads/20180320/0dc91efde321676250cc6f002edc0a25.png' , 12 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000306s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '三体' , '/uploads/20180320/1619d475828b01db8bd5b2f2c2201f79.png' , 36 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000356s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '最帅的我' , '/uploads/20180320/91de818a2356c17c32d9d0142c704213.png' , 36 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000292s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (9 , 17 , '大凶残' , '/uploads/20180326/f09bcd635de8e933c061b36ec05f3b63.png' , 99 , 1 , '7' , 1522152553 , 1522152553) [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` = 4 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] DELETE FROM `tpshop_cart`    WHERE  `id` = 4 [ RunTime:0.000907s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:31+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=4
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=4 [运行时间：0.085487s][吞吐率：11.70req/s] [内存消耗：3,298.71kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '4',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002145s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.002195s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000985s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001383s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (4) [ RunTime:0.000763s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:36+08:00 ] 127.0.0.1 POST /home/cart/createorder.html
+[ info ] www.tpshop.com/home/cart/createorder.html [运行时间：0.081361s][吞吐率：12.29req/s] [内存消耗：3,228.18kb] [文件加载：59]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'createorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/flow2.html?cart_ids=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/createorder_html' => '',
+  'address_id' => '1',
+  'shipping_type' => '0',
+  'pay_type' => '2',
+  'cart_ids' => '4',
+)
+[ info ] [ RUN ] app\home\controller\Cart->createorder[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000724s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001212s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`goods_name`,`t2`.`goods_logo`,`t2`.`goods_price` FROM `tpshop_cart` `t1` LEFT JOIN `tpshop_goods` `t2` ON t1.goods_id WHERE  `t1`.`id` IN ('4') [ RunTime:0.001849s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001033s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order` [ RunTime:0.002706s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order` (`order_sn` , `user_id` , `order_amount` , `consignee_name` , `consignee_phone` , `consignee_address` , `shipping_type` , `pay_type` , `create_time` , `update_time`) VALUES ('1522152816565990' , 6 , 0 , '曹操' , '15312345678' , '北京市顺义区黑马大厦' , 0 , 2 , 1522152816 , 1522152816) [ RunTime:0.003028s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order_goods` [ RunTime:0.003422s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` = 4 [ RunTime:0.000770s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:39+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=4
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=4 [运行时间：0.045681s][吞吐率：21.89req/s] [内存消耗：3,298.16kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '4',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000686s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001167s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001560s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (4) [ RunTime:0.000667s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:40+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=4
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=4 [运行时间：0.044116s][吞吐率：22.67req/s] [内存消耗：3,299.77kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://unitradeprod.alipaydev.com/appAssign.htm?alipay_exterface_invoke_assign_target=invoke_c393d15f3585857873bac11bb09efbc4&alipay_exterface_invoke_assign_sign=iz_w_mtr_hy_gjc7_oii8%2F26h5k4jma_z6_e%2Bj5_uqc_kq_a_ch_n_lb_o_g22vtl_t_u_tg%3D%3D',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '4',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000686s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001060s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (4) [ RunTime:0.000731s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:42+08:00 ] 127.0.0.1 GET /home/cart/index.html
+[ info ] www.tpshop.com/home/cart/index.html [运行时间：0.053185s][吞吐率：18.80req/s] [内存消耗：3,314.86kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/addcart.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/index_html' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->index[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/cart.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000812s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001343s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `user_id` = 6 [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001271s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','13') [ RunTime:0.000915s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:43+08:00 ] 127.0.0.1 GET /home/cart/index.html
+[ info ] www.tpshop.com/home/cart/index.html [运行时间：0.048863s][吞吐率：20.47req/s] [内存消耗：3,314.94kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/addcart.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/index_html' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->index[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/cart.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000745s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `user_id` = 6 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001145s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','13') [ RunTime:0.000811s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:44+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids= [运行时间：0.047837s][吞吐率：20.90req/s] [内存消耗：3,298.68kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000729s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001138s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001368s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (0) [ RunTime:0.000680s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:50+08:00 ] 127.0.0.1 POST /home/cart/createorder.html
+[ info ] www.tpshop.com/home/cart/createorder.html [运行时间：0.059622s][吞吐率：16.77req/s] [内存消耗：3,231.85kb] [文件加载：59]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'createorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/flow2.html?cart_ids=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/createorder_html' => '',
+  'address_id' => '1',
+  'shipping_type' => '0',
+  'pay_type' => '2',
+  'cart_ids' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->createorder[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000874s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001154s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`goods_name`,`t2`.`goods_logo`,`t2`.`goods_price` FROM `tpshop_cart` `t1` LEFT JOIN `tpshop_goods` `t2` ON t1.goods_id WHERE  `t1`.`id` IN ('') [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order` [ RunTime:0.001125s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order` (`order_sn` , `user_id` , `order_amount` , `consignee_name` , `consignee_phone` , `consignee_address` , `shipping_type` , `pay_type` , `create_time` , `update_time`) VALUES ('1522152830706980' , 6 , 0 , '曹操' , '15312345678' , '北京市顺义区黑马大厦' , 0 , 2 , 1522152830 , 1522152830) [ RunTime:0.002588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order_goods` [ RunTime:0.001116s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:53+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids= [运行时间：0.043216s][吞吐率：23.14req/s] [内存消耗：3,298.68kb] [文件加载：60]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001502s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (0) [ RunTime:0.000645s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:53+08:00 ] 127.0.0.1 GET /home/cart/index.html
+[ info ] www.tpshop.com/home/cart/index.html [运行时间：0.050328s][吞吐率：19.87req/s] [内存消耗：3,314.86kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/addcart.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/index_html' => '',
+)
+[ info ] [ RUN ] app\home\controller\Cart->index[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/cart.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000685s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001196s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `user_id` = 6 [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001081s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','13') [ RunTime:0.000692s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:57+08:00 ] 127.0.0.1 POST /home/cart/changenum.html
+[ info ] www.tpshop.com/home/cart/changenum.html [运行时间：0.065318s][吞吐率：15.31req/s] [内存消耗：3,092.45kb] [文件加载：55]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'changenum',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.tpshop.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/changenum_html' => '',
+  'number' => '1',
+  'goods_id' => '18',
+  'goods_attr_ids' => '9,13',
+)
+[ info ] [ RUN ] app\home\controller\Cart->changenum[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000759s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001455s ]
+[ sql ] [ SQL ] UPDATE `tpshop_cart`  SET `number`=1  WHERE  `user_id` = 6  AND `goods_id` = 18  AND `goods_attr_ids` = '9,13' [ RunTime:0.003643s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:57+08:00 ] 127.0.0.1 GET /home/cart/flow2.html?cart_ids=2
+[ info ] www.tpshop.com/home/cart/flow2.html?cart_ids=2 [运行时间：0.050656s][吞吐率：19.74req/s] [内存消耗：3,341.91kb] [文件加载：62]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'flow2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/flow2_html' => '',
+  'cart_ids' => '2',
+)
+[ info ] [ RUN ] app\home\controller\Cart->flow2[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Sites/workspace/tpshop/public/../application/home/view/cart/flow2.html [ array (
+  0 => 'address',
+  1 => 'cart_data',
+  2 => 'total_price',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001094s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.001710s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `user_id` = 6 [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.001145s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` IN (2) [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods` [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_goods` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_goods_attr` [ RunTime:0.001115s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`attr_name` FROM `tpshop_goods_attr` `t1` LEFT JOIN `tpshop_attribute` `t2` ON `t1`.`attr_id`=`t2`.`id` WHERE  `t1`.`id` IN ('9','13') [ RunTime:0.000720s ]
+---------------------------------------------------------------
+[ 2018-03-27T20:13:59+08:00 ] 127.0.0.1 POST /home/cart/createorder.html
+[ info ] www.tpshop.com/home/cart/createorder.html [运行时间：0.104901s][吞吐率：9.53req/s] [内存消耗：3,274.90kb] [文件加载：61]
+[ info ] [ LANG ] /Users/apple/Sites/workspace/tpshop/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'cart',
+    2 => 'createorder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tpshop.com',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.tpshop.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tpshop.com/home/cart/flow2.html?cart_ids=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7664264192; PHPSESSID=fbq1t21s1ih5vb8k1174gumt2l; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  '/home/cart/createorder_html' => '',
+  'address_id' => '1',
+  'shipping_type' => '0',
+  'pay_type' => '2',
+  'cart_ids' => '2',
+)
+[ info ] [ RUN ] app\home\controller\Cart->createorder[ /Users/apple/Sites/workspace/tpshop/application/home/controller/Cart.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001163s ] mysql:host=127.0.0.1;port=3306;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_cart` [ RunTime:0.004299s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`goods_name`,`t2`.`goods_logo`,`t2`.`goods_price` FROM `tpshop_cart` `t1` LEFT JOIN `tpshop_goods` `t2` ON t1.goods_id WHERE  `t1`.`id` IN ('2') [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_address` [ RunTime:0.000953s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order` [ RunTime:0.002525s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order` (`order_sn` , `user_id` , `order_amount` , `consignee_name` , `consignee_phone` , `consignee_address` , `shipping_type` , `pay_type` , `create_time` , `update_time`) VALUES ('1522152839303471' , 6 , 37008 , '曹操' , '15312345678' , '北京市顺义区黑马大厦' , 0 , 2 , 1522152839 , 1522152839) [ RunTime:0.000997s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tpshop_order_goods` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '妙蛙种子' , '/uploads/20180314/4f000d1f85878077a8c52ff904b45d79.png' , 1 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000655s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '妙蛙花' , '/uploads/20180314/e9c0d1dc79bbebe8f7318b01dbd8b87c.png' , 36 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000328s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '小火龙' , '/uploads/20180314/fa9e2333d121824a08889e079851b315.png' , 1 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000309s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '杰尼龟' , '/uploads/20180315/22459b3cdc665ab5987bb28b40d4746c.png' , 1 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000286s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '水箭龟' , '/uploads/20180315/1f300832d281fc3ba2a589eb64590c89.png' , 36 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000313s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '绿毛虫' , '/uploads/20180315/f32316d075417637561d6b5948c0510d.png' , 1 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000314s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '绿毛虫' , '/uploads/20180315/7d506715fb8f6654eb19498dbf9dc02e.png' , 1 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000459s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '喵喵' , '/uploads/20180315/4a61f69e11b4743dd46ed4db187017be.png' , 1 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000552s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '可达鸭' , '/uploads/20180315/33d09482e76f3fe138ff87304b75642f.png' , 36 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000294s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '撒地方' , '/uploads/20180315/82952c90a988067aae0fefa718673dce.png' , 36 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000314s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '小火龙wq' , '/uploads/20180315/3dce1d8b5d27d466f0dda94a4775dec6.png' , 2132 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000303s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '小火龙21' , '/uploads/20180315/8bd72149dbe5bc8bb27cd49e853361b4.png' , 34432 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000306s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '皮卡丘' , '/uploads/20180315/bae371fe87b8a8060f4dda673c3cb012.png' , 100 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000300s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '大凶残' , '/uploads/20180318/201be717fc914f92d5d30fff4956671a.png' , 11 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000300s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '12' , '/uploads/20180320/0dc91efde321676250cc6f002edc0a25.png' , 12 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000308s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '三体' , '/uploads/20180320/1619d475828b01db8bd5b2f2c2201f79.png' , 36 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000328s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '最帅的我' , '/uploads/20180320/91de818a2356c17c32d9d0142c704213.png' , 36 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000319s ]
+[ sql ] [ SQL ] INSERT INTO `tpshop_order_goods` (`order_id` , `goods_id` , `goods_name` , `goods_logo` , `goods_price` , `number` , `goods_attr_ids` , `create_time` , `update_time`) VALUES (12 , 18 , '大凶残' , '/uploads/20180326/f09bcd635de8e933c061b36ec05f3b63.png' , 99 , 1 , '9,13' , 1522152839 , 1522152839) [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `tpshop_cart` WHERE  `id` = 2 [ RunTime:0.000569s ]
+[ sql ] [ SQL ] DELETE FROM `tpshop_cart`    WHERE  `id` = 2 [ RunTime:0.001349s ]
